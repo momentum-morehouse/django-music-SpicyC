@@ -32,7 +32,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-music-spicyc-1--spicyc.repl.co', 'django-music-spicyc-1.spicyc.repl.co']
 
 # Application definition
 
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
 
     # Third-party
     'debug_toolbar',
@@ -50,6 +51,7 @@ INSTALLED_APPS = [
 
     # Project-specific
     'users',
+    'albums',
 ]
 
 MIDDLEWARE = [
